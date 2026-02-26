@@ -197,27 +197,34 @@ Payments
 
 📁 Project Structure
 shopez/
-├── backend/
+│
+├── backend/                        # Node.js / Express API
 │   ├── src/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── middlewares/
-│   │   ├── utils/
-│   │   └── config/
-│   ├── server.js
+│   │   ├── controllers/            # Business logic
+│   │   ├── models/                 # MongoDB schemas
+│   │   ├── routes/                 # API endpoints
+│   │   ├── middlewares/            # Auth & error handling
+│   │   ├── utils/                  # Helper functions
+│   │   └── config/                 # DB configuration
+│   ├── server.js                   # Entry point
 │   └── package.json
 │
-├── frontend/
+├── frontend/                       # React (Vite) App
 │   ├── src/
 │   │   ├── pages/
-│   │   ├── components/
-│   │   ├── api/
-│   │   ├── context/
+│   │   │   ├── admin/
+│   │   │   ├── vendor/
+│   │   │   ├── user/
+│   │   │   ├── auth/
+│   │   │   └── help/
+│   │   ├── components/             # Reusable UI components
+│   │   ├── api/                    # Axios API services
+│   │   ├── context/                # React Context
 │   │   └── App.jsx
+│   ├── package.json
 │   └── vite.config.js
 │
-└── Documentation files
+└── Documentation/                  # Project docs
 ⚙️ Installation & Setup
 🔹 Prerequisites
 
