@@ -17,7 +17,7 @@ ShopEZ: One-Stop Shop for Online Purchases
 # Project Overview 
 ## Purpose :
 - To develop a secure ecommerce web application using the MERN stack.
--To provide a smooth and user-friendly online shopping experience.
+- To provide a smooth and user-friendly online shopping experience.
 
 •	To implement secure authentication using JWT and password encryption.
 
