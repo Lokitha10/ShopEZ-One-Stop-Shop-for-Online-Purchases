@@ -1,8 +1,10 @@
 # ShopEZ:One-Stop-Shop-for-Online-Purchases
 
-1. Introduction
-• Project Title: ShopEZ:One-Stop Shop for Online Purchases
-• Team Members And Roles: 
+#1. Introduction
+
+# Project Title:
+  ShopEZ:One-Stop Shop for Online Purchases
+# Team Members And Roles: 
 
 | Name | Role |
 |------|------|
@@ -10,15 +12,15 @@
 | Yadavakunta Pradeep Reddy | Full Stack Developer (Backend & Frontend) |
 | M Sai Dhiraj Kumar | Database & Payment Integration |
 
-3. Project Overview 
-Purpose :
+#2. Project Overview 
+#Purpose :
 •	To develop a secure ecommerce web application using the MERN stack.
 •	To provide a smooth and user-friendly online shopping experience.
 •	To implement secure authentication using JWT and password encryption.
 •	To enable efficient product, cart, and order management.
 •	To integrate a secure online payment system using Razorpay.
 •	To design a scalable architecture using MongoDB Atlas.
-Goals:
+#Goals:
 •	To build a fully functional full-stack ecommerce application using MERN.
 •	To ensure secure user authentication and authorization.
 •	To implement efficient product browsing and search functionality.
@@ -27,9 +29,9 @@ Goals:
 •	To provide an admin panel for product and order management.
 •	To design a scalable and maintainable system architecture.
 
-Features and Functionalities:
+#Features and Functionalities:
 
-Authentication:
+#Authentication:
 •	User registration with email validation
 •	Secure login with JWT token
 •	Password hashing using bcrypt
@@ -37,7 +39,7 @@ Authentication:
 •	Profile management
 •	Protected API routes
 
-Product Management:
+#Product Management:
 •	Add new product (Admin)
 •	Update product details
 •	Delete product
@@ -45,28 +47,28 @@ Product Management:
 •	View product details
 •	Basic search and category filtering
 
-Cart Management:
+#Cart Management:
 •	Add product to cart
 •	Update product quantity
 •	Remove product from cart
 •	Real-time total calculation
 •	Cart data persistence
 
-Order Management:
+#Order Management:
 •	Create order from cart
 •	Generate unique order ID
 •	Store order details
 •	View order history
 •	Order status tracking
 
-Payment Processing:
+#Payment Processing:
 •	Razorpay order creation
 •	Payment verification
 •	Payment success handling
 •	Payment failure handling
 •	Update order payment status
 
-Admin Features:
+#Admin Features:
 •	Admin login
 •	Manage products
 •	View users
@@ -75,6 +77,85 @@ Review Functionality:
 •	Add product review
 •	View product ratings
 
+#3. Architecture 
+#Frontend: 
+1. Technology Stack
+•	React.js (UI Development)
+•	Vite (Fast build tool)
+•	Tailwind CSS (Styling)
+•	Axios (API communication)
+•	React Router (Client-side routing)
+2. Architecture Design
+Component-Based Structure
+•	Reusable components (Navbar, ProductCard, CartItem, etc.)
+•	Page-level components (Login, Register, Home, Cart, Orders, Admin
+Dashboard)
+3. State Management
+•	useState and useEffect hooks
+•	Local state for forms and UI updates
+•	Token stored in localStorage for authentication
+4. Routing
+•	Public Routes (Login, Register)
+•	Protected Routes (Cart, Orders, Admin)
+•	Role-based access using JWT
+5. API Communication
+•	Axios used for sending HTTP requests
+•	Backend endpoints connected through REST APIs
+•	Token attached in Authorization header
+6. UI Design
+•	Responsive layout
+•	Mobile-friendly design
+•	Clean and minimal interface
+
+#Backend: 
+
+Server Layer
+•	Express server handles HTTP requests
+•	Middleware for JSON parsing and error handling
+•	API routes defined under /api
+Route Layer
+Separate route files for better modularity:
+•	Auth Routes
+•	Product Routes
+•	Cart Routes
+•	Order Routes
+•	Payment Routes
+•	Admin Routes
+Each route connects to its respective controller.
+Controller Layer
+•	Contains business logic
+•	Handles request and response
+•	Performs validation
+•	Communicates with database
+Middleware Layer
+•	JWT Authentication Middleware
+•	Role-Based Authorization
+•	Error Handling Middleware
+Ensures secure and controlled API access.
+Database Layer
+•	MongoDB Atlas (Cloud Database)
+•	Mongoose schemas for:
+o	Users
+o	Products
+o	Orders
+o	Cart
+o	Payments
+Payment Integration Layer
+•	Razorpay SDK integration
+•	Order creation
+•	Payment verification
+•	Signature validation
+Security Implementation
+•	JWT token validation on protected routes
+•	Password hashing using bcrypt
+•	Role-based access control (Admin / User)
+• Database:
+•	MongoDB Atlas cloud database
+•	Collections: Users, Products, Cart, Orders, Payments
+•	Data stored in JSON format using Mongoose schemas
+•	CRUD operations: save(), find(), update(), delete()
+•	Relationships handled using ObjectId references
+•	Secured with JWT authentication & bcrypt password hashing 
 
 🏗️ Project Structure
 shopez/
