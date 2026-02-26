@@ -1,4 +1,4 @@
-🛍️ ShopEZ – One Stop Shop for Online Purchases
+#🛍️ ShopEZ – One Stop Shop for Online Purchases
 
 A full-stack E-commerce platform built using the MERN Stack with multi-role access (Customer, Vendor, Admin), secure authentication, and Razorpay payment integration.
 
@@ -8,10 +8,13 @@ A full-stack E-commerce platform built using the MERN Stack with multi-role acce
 ShopEZ: One-Stop Shop for Online Purchases
 
 👥 Team Members & Roles
-Name	Role
-Thathireddy Lokitha	Full Stack Developer (Backend & Frontend)
-Yadavakunta Pradeep Reddy	Full Stack Developer (Backend & Frontend)
-M Sai Dhiraj Kumar	Database & Payment Integration
+
+| Name | Role |
+|------|------|
+| Thathireddy Lokitha | Full Stack Developer (Backend & Frontend) |
+| Yadavakunta Pradeep Reddy | Full Stack Developer (Backend & Frontend) |
+| M Sai Dhiraj Kumar | Database & Payment Integration |
+
 🎯 2. Project Overview
 ✅ Purpose
 
