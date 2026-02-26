@@ -18,30 +18,20 @@ ShopEZ: One-Stop Shop for Online Purchases
 ## Purpose :
 - To develop a secure ecommerce web application using the MERN stack.
 - To provide a smooth and user-friendly online shopping experience.
-
-•	To implement secure authentication using JWT and password encryption.
-
-•	To enable efficient product, cart, and order management.
-
-•	To integrate a secure online payment system using Razorpay.
-
-•	To design a scalable architecture using MongoDB Atlas.
+- To implement secure authentication using JWT and password encryption.
+- To enable efficient product, cart, and order management.
+- To integrate a secure online payment system using Razorpay.
+- To design a scalable architecture using MongoDB Atlas.
 
 ## Goals:
 
-•	To build a fully functional full-stack ecommerce application using MERN.
-
-•	To ensure secure user authentication and authorization.
-
-•	To implement efficient product browsing and search functionality.
-
-•	To enable smooth cart and order processing.
-
-•	To integrate secure online payment processing.
-
-•	To provide an admin panel for product and order management.
-
-•	To design a scalable and maintainable system architecture.
+- To build a fully functional full-stack ecommerce application using MERN.
+- To ensure secure user authentication and authorization.
+- To implement efficient product browsing and search functionality.
+- To enable smooth cart and order processing.
+- To integrate secure online payment processing.
+- To provide an admin panel for product and order management.
+-	To design a scalable and maintainable system architecture.
 
 ## 🎯 Project Overview
 
