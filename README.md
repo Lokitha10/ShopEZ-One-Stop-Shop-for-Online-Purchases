@@ -1,126 +1,78 @@
-#🛍️ ShopEZ – One Stop Shop for Online Purchases
+🛍️ ShopEZ – One Stop Shop for Online Purchases
 
-A full-stack E-commerce platform built using the MERN Stack with multi-role access (Customer, Vendor, Admin), secure authentication, and Razorpay payment integration.
+A full-stack MERN E-commerce Platform with multi-role access (Customer, Vendor, Admin), secure JWT authentication, Razorpay payment integration, and scalable MongoDB architecture.
 
-📌 1. Introduction
+📌 Introduction
 📖 Project Title
 
 ShopEZ: One-Stop Shop for Online Purchases
 
-👥 Team Members & Roles
-
-| Name | Role |
-|------|------|
-| Thathireddy Lokitha | Full Stack Developer (Backend & Frontend) |
-| Yadavakunta Pradeep Reddy | Full Stack Developer (Backend & Frontend) |
-| M Sai Dhiraj Kumar | Database & Payment Integration |
-
-🎯 2. Project Overview
-✅ Purpose
-
-Develop a secure ecommerce web app using MERN stack
-
-Provide smooth online shopping experience
-
-Implement JWT-based authentication
-
-Manage products, cart, and orders efficiently
-
-Integrate Razorpay payment gateway
-
-Build scalable architecture using MongoDB Atlas
-
-🎯 Goals
-
-Fully functional full-stack ecommerce system
-
-Secure role-based authentication
-
-Product search & filtering
-
-Cart & order processing
-
-Admin management dashboard
-
-Maintainable and scalable system design
-
-🚀 3. Features & Functionalities
+👥 Team Members
+Name	Role
+Thathireddy Lokitha	Full Stack Developer (Frontend & Backend)
+Yadavakunta Pradeep Reddy	Full Stack Developer (Frontend & Backend)
+M Sai Dhiraj Kumar	Database & Payment Integration
+🚀 Features
 🔐 Authentication
 
-User Registration with validation
+User Registration & Login
 
-JWT-based secure login
+JWT Token Authentication
 
 Password hashing using bcrypt
 
-Role-based access (Customer / Vendor / Admin)
+Role-Based Access (Customer / Vendor / Admin)
 
-Profile management
-
-Protected API routes
+Protected API Routes
 
 📦 Product Management
 
-Add / Update / Delete products (Vendor/Admin)
+Add / Update / Delete Products
 
-View product listing & details
+Product Listing & Details
 
-Category filtering
-
-Search functionality
+Search & Category Filtering
 
 🛒 Cart Management
 
-Add to cart
+Add to Cart
 
-Update quantity
+Update Quantity
 
-Remove items
+Remove Items
 
-Real-time total calculation
-
-Cart persistence
+Real-time Total Calculation
 
 📦 Order Management
 
-Create order from cart
+Create Order
 
-Unique order ID generation
+Order History
 
-Store order details
+Status Tracking
 
-Order history
+💳 Payment Integration
 
-Status tracking
+Razorpay Order Creation
 
-💳 Payment Processing
+Payment Verification
 
-Razorpay order creation
+Success / Failure Handling
 
-Payment verification
+👨‍💼 Admin Panel
 
-Success / Failure handling
+Manage Users
 
-Order payment status update
+Manage Vendors
 
-👨‍💼 Admin Features
+Manage Products
 
-Admin login
+Monitor Orders
 
-Vendor verification
+Dashboard Analytics
 
-User management
-
-Product & order monitoring
-
-Analytics dashboard
-
-Permission-based access control (22 permissions)
-
-🏗️ 4. Architecture
+🏗️ Architecture
 🎨 Frontend
-
-Tech Stack:
 
 React.js
 
@@ -128,27 +80,13 @@ Vite
 
 Tailwind CSS
 
-Axios
-
 React Router v6
+
+Axios
 
 Context API
 
-Architecture Highlights:
-
-Component-based reusable structure
-
-Protected & role-based routes
-
-Token stored in localStorage
-
-REST API integration
-
-Responsive mobile-first design
-
 ⚙️ Backend
-
-Tech Stack:
 
 Node.js
 
@@ -164,23 +102,9 @@ Bcrypt
 
 Razorpay SDK
 
-Layered Architecture:
-
-Server Layer (Express server)
-
-Route Layer (Auth, Product, Cart, Order, Payment, Admin)
-
-Controller Layer (Business logic)
-
-Middleware Layer (JWT Auth, RBAC, Error handling)
-
-Database Layer (MongoDB Atlas collections)
-
 🗄️ Database Collections
 
 Users
-
-Admin
 
 Vendors
 
@@ -201,18 +125,18 @@ Payments
 📁 Project Structure
 shopez/
 │
-├── backend/                        # Node.js / Express API
+├── backend/
 │   ├── src/
-│   │   ├── controllers/            # Business logic
-│   │   ├── models/                 # MongoDB schemas
-│   │   ├── routes/                 # API endpoints
-│   │   ├── middlewares/            # Auth & error handling
-│   │   ├── utils/                  # Helper functions
-│   │   └── config/                 # DB configuration
-│   ├── server.js                   # Entry point
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── middlewares/
+│   │   ├── utils/
+│   │   └── config/
+│   ├── server.js
 │   └── package.json
 │
-├── frontend/                       # React (Vite) App
+├── frontend/
 │   ├── src/
 │   │   ├── pages/
 │   │   │   ├── admin/
@@ -220,24 +144,16 @@ shopez/
 │   │   │   ├── user/
 │   │   │   ├── auth/
 │   │   │   └── help/
-│   │   ├── components/             # Reusable UI components
-│   │   ├── api/                    # Axios API services
-│   │   ├── context/                # React Context
+│   │   ├── components/
+│   │   ├── api/
+│   │   ├── context/
 │   │   └── App.jsx
 │   ├── package.json
 │   └── vite.config.js
 │
-└── Documentation/                  # Project docs
+└── Documentation/
 ⚙️ Installation & Setup
-🔹 Prerequisites
-
-Node.js 16+
-
-MongoDB Atlas account
-
-npm
-
-🔹 Backend Setup
+🔹 Backend
 cd backend
 npm install
 
@@ -253,82 +169,54 @@ Run backend:
 
 npm start
 
-Backend runs at:
-http://localhost:5000
+Backend → http://localhost:5000
 
-🔹 Frontend Setup
+🔹 Frontend
 cd frontend
 npm install
 npm run dev
 
-Frontend runs at:
-http://localhost:5173
+Frontend → http://localhost:5173
 
-🔐 Authentication & Roles
+🔐 User Roles
 Role	Access
 Customer	Browse, Cart, Orders
-Vendor	Manage products & orders
-Admin	Full platform control
-📊 Admin Dashboard
+Vendor	Product & Order Management
+Admin	Full Platform Control
+🔒 Security
 
-Vendor verification
+JWT Authentication
 
-User metrics
+Role-Based Access Control
 
-Product inventory overview
+Password Hashing (bcrypt)
 
-Order monitoring
+Protected API Endpoints
 
-Permission-based stats
-
-🔒 Security Features
-
-JWT authentication
-
-Role-Based Access Control (RBAC)
-
-Password hashing (bcrypt)
-
-Protected API routes
-
-Input validation
-
-Error handling middleware
+Error Handling Middleware
 
 📱 Responsive Design
 
-Mobile-first approach
-
 Tailwind CSS
+
+Mobile-first approach
 
 Optimized for all screen sizes
 
 🧪 Testing
 
-API tested using Postman
+Postman API Testing
 
-Manual frontend testing
+Manual UI Testing
 
-Order & payment flow verification
+Payment Flow Verification
 
-🐛 Troubleshooting
-
-Backend issues:
-
-npm cache clean --force
-rm -rf node_modules package-lock.json
-npm install
-
-Frontend issues:
-
-rm -rf node_modules package-lock.json
-npm install
 📄 License
 
-This project is developed for educational and demonstration purposes.
+This project is developed for educational purposes.
 
 👨‍💻 Project Status
 
-✅ Complete
+✅ Completed
 ✅ Production Ready
-✅ Multi-role E-commerce Platform
+✅ Multi-Role E-Commerce Platform
