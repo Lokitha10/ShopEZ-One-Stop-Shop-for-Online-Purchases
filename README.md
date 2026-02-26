@@ -1,4 +1,4 @@
-# ShopEz - E-Commerce Platform
+# ShopEZ – One Stop Shop for Online Purchases
 
 A full-stack MERN E-commerce Platform with multi-role access (Customer, Vendor, Admin), secure JWT authentication, Razorpay payment integration, and scalable MongoDB architecture.
 
